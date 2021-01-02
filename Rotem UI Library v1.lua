@@ -212,7 +212,7 @@ function lib:CreateWindow(title,dark)
     TextLabel.Text = tostring(title)
     TextLabel.TextColor3 = Color3.fromRGB(35,35,35)
     TextLabel.TextSize = 21.000    
-    local window = {MainFrame = Frame,isDark = dark}
+    local window = {MainFrame = Frame,isDark =}
     table.insert(self.windows,window)
     getFnctions(window)
     return window;
