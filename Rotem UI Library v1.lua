@@ -129,9 +129,17 @@ local function getFnctions(parent)
 		TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TextBox.TextSize = 25.000
 		TextBox.BorderSizePixel = 0
+		if (options.isGlobalFlag) then
 		_G[options.Flag] = ""
+		else
+			lib.Flags[options.Flag] = ""
+		end
 		TextBox:GetPropertyChangedSignal("Text"):Connect(function()
-			_G[options.Flag] = TextBox.Text;
+			if (options.isGlobalFlag) then
+				_G[options.Flag] = TextBox.Text
+				else
+					lib.Flags[options.Flag] = TextBox.Text
+				end
 		end)
 	end
 
