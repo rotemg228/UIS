@@ -8,7 +8,7 @@
 
 # Example
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/rotemg228/UIS/main/Rotem%20UI%20Library%20v1.lua?token=ARM5S3S22RNNWDZAIYKRGSC76HPQA", true))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/rotemg228/UIS/main/Rotem%20UI%20Library%20v1.lua", true))()
 
 local Window = Library:CreateWindow("Example Gui v1", true)
 Window:Toggle({Text = "Toggle", Callback = function(checked) print("Toggle = "..Checked) end})
