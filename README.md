@@ -17,6 +17,6 @@ Window:Bind({Text = "Bind", Callback = function(key) print("Key = "..key) end})
 Window:Box({Text = "Box", flagname = "BoxFlag"})
 Window:Label({Text = "Label"})
 while wait(.5) do
-print(Library.Flags.BoxFlag)
+print(_G.BoxFlag)
 end
 ```

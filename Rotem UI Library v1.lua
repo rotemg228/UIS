@@ -129,9 +129,9 @@ local function getFnctions(parent)
 		TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 		TextBox.TextSize = 25.000
 		TextBox.BorderSizePixel = 0
-		lib.Flags[options.Flag] = ""
+		_G[options.Flag] = ""
 		TextBox:GetPropertyChangedSignal("Text"):Connect(function()
-			lib.Flags[options.Flag] = TextBox.Text;
+			_G[options.Flag] = TextBox.Text;
 		end)
 	end
 
