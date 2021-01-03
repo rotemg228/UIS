@@ -247,12 +247,7 @@ function lib:CreateHiddenWindow(title)
 	return HiddenWindow;
 end
 
-w = lib:CreateWindow("Fat", true)
-w:Toggle({Callback = function(val) print(val) end,State = false,Text = "Toggle"})
-w:Button({Text = "Button",Callback = function() print"called" end})
-w:Bind({Text = "Keybind",Callback = function(k) print(k) end})
-local text = w:Box({Text = "hello",Flag = "flagey"})
-local t = w:Label({Text = "fat"})
+
 
 
 return lib;
