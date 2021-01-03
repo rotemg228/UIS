@@ -5,3 +5,8 @@
 * Window:Bind({Callback = function,Text = string})
 * Window:Box({Text = string, flagname = string})
 * Window:Label({Text = string})
+
+# Loadstring
+```lua
+print("Hello")
+```
