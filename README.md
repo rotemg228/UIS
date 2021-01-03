@@ -1,9 +1,9 @@
 # Rotem's UI Library V1
 * (Window)Library:CreateWindow(string title, bool isDark)
-* (void)Window:Toggle({Callback = function,Text = string, flagname = string})
+* (void)Window:Toggle({Callback = function,Text = string, Flag = string, isGlobalFlag = bool})
 * (void)Window:Button({Callback = function,Test = string})
 * (void)Window:Bind({Callback = function,Text = string})
-* (void)Window:Box({Text = string, flagname = string})
+* (void)Window:Box({Text = string, Flag = string, isGlobalFlag = bool})
 * (void)Window:Label({Text = string})
 
 # Example

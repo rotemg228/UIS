@@ -217,6 +217,7 @@ function FilterTable(options)
 	options.Callback = typeof(options.Callback) == "function" and options.Callback or function() end;
 	options.State = typeof(options.State) == "boolean" and options.State or false;
 	options.Flag = typeof(options.Flag) == "string" and options.Flag or "";
+	options.isGlobalFlag = typeof(options.isGlobalFlag) == "boolean" and options.isGlobalFlag or false
 	return options;
 end
 
